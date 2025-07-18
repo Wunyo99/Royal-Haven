@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logo2.png">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/81481f58b4.js" crossorigin="anonymous"></script>
+    <script defer src="./main.js"></script>
+    <title>Royal Haven</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-white shadow">
+            <div class="container-fluid ">
+                <div class="logo d-flex align-items-center gap-2">
+                    <img src="./images/logo2.png" alt="" style="width: 70px;">
+                    <a class="navbar-brand fw-bold fs-2" href="./index.html">Royal Haven</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold  und-hov" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold  und-hov" href="./About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active fw-bold  und-hov" href="#">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold  und-hov" href="./amenities.html">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold  und-hov" href="./dining.html">Dining</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold und-hov" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold  und-hov" href="./contact.html">Contact</a>
+                        </li>
+
+
+                    </ul>
+                    <div>
+
+                    </div>
+                    <div>
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+                            <li class="nav-item d-flex align-items-center">
+                                <ion-icon name="call-outline" class="fw-medium"></ion-icon>
+                                <a class="nav-link fw-medium"> (+233) 245 494 534</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-success px-4 text-white fw-bold rounded-5 text-center"
+                                    href="#">Book Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="py-5" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%), url('https://t3.ftcdn.net/jpg/10/23/23/66/240_F_1023236650_AMsOxOipIvagowEZbzYOV7oqYEfM4uvP.jpg');
+    background-repeat: no-repeat;background-position: center; background-size: cover; height: fit-content;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 " style="margin-top: 6rem;">
+                        <h1 class="text-white display-2 fw-bold text-center m-auto">
+                            Luxury <span class="text-success">Accommodations</span>
+                        </h1>
+                        <p class="text-white w-75 text-center m-auto py-4 mb-5">Discover our collection of
+                            elegantly appointed rooms and suites, each designed to provide the ultimate in comfort,
+                            style, and personalized service.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div class="container-fluid mt-5">
+                <ul class="nav nav-tabs justify-content-center gap-2" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link text-dark active rounded-5 px-4 py-3 fw-medium bg-secondary bg-opacity-25 "
+                            id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                            aria-controls="home-tab-pane" aria-selected="true">All Rooms</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark rounded-5 px-4 py-3 fw-medium bg-secondary bg-opacity-25 "
+                            id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+                            role="tab" aria-controls="profile-tab-pane" aria-selected="false">Deluxe Rooms</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark rounded-5 px-4 py-3 fw-medium bg-secondary bg-opacity-25 "
+                            id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+                            role="tab" aria-controls="contact-tab-pane" aria-selected="false">Suites</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark rounded-5 px-4 py-3 fw-medium bg-secondary bg-opacity-25"
+                            id="presidential-tab" data-bs-toggle="tab" data-bs-target="#presidential-tab-pane"
+                            type="button" role="tab" aria-controls="presidential-tab-pane"
+                            aria-selected="false">Presidential</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+
+                        <div class="container-fluid mt-5 py-4">
+                            <div class="row row-cols-1 row-cols-lg-2 g-4">
+                                <div class="col">
+                                    <div class="card border-0 shadow rounded-top-4">
+                                        <div class="position-relative">
+                                            <div
+                                                class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                                <p class="px-3 mb-0 py-2 fw-semibold">From $299/night</p>
+                                            </div>
+                                            <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
+                                                class="card-img-top rounded-top-4" alt="...">
+                                            <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-square"></i>
+                                                    <span>35 sqm</span>
+                                                </div>
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-people"></i>
+                                                    <span>2 guests</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="card-title fw-bold">Deluxe City View</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                    <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                        King Bed</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="bi bi-eye text-secondary"></i>
+                                                    <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                        View</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Elegant room with modern amenities and stunning
+                                                city
+                                                views. Perfect for business travelers and couples seeking comfort
+                                                and
+                                                style.</p>
+                                            <div>
+                                                <h6>Room Amenities</h6>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-lg-6">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">City View</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Mini
+                                                                        Bar</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">High-Speed
+                                                                        Wi-Fi</li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Work Desk</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Marble
+                                                                        Bathroom</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">24/7 Room Service
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+
+                                                        <hr class="">
+
+                                                        <div class="d-block d-md-flex  justify-content-between">
+                                                            <div
+                                                                class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                                <div> <i
+                                                                        class="bi bi-wifi icon-bold text-secondary "></i>
+                                                                </div>
+                                                                <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-cup  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div><i
+                                                                        class="bi bi-car-front icon-bold text-secondary"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-cente gap-2 mt-3 mt-md-0">
+                                                                <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                    style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                    href="#">
+                                                                    View Details
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                        viewBox="0 0 16 16" aria-hidden="true">
+                                                                        <path
+                                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                    </svg>
+                                                                </a>
+                                                                <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#bookingModal"
+                                                                    data-room="Deluxe City View - $299/night"
+                                                                    data-max-guests="2">Book
+                                                                    Now</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+
+                                    <!-- CARD 2 -->
+
+                                    <div class="card border-0 shadow rounded-top-4">
+                                        <div class="position-relative">
+                                            <div
+                                                class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                                <p class="px-3 mb-0 py-2 fw-semibold">From $329/night</p>
+                                            </div>
+                                            <img src="https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
+                                                class="card-img-top rounded-top-4" alt="...">
+                                            <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-square"></i>
+                                                    <span>38 sqm</span>
+                                                </div>
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-people"></i>
+                                                    <span>2 guests</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="card-title fw-bold">Deluxe Garden View</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                    <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                        King Bed</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="bi bi-eye text-secondary"></i>
+                                                    <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                        View</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Serene accommodation overlooking our beautifully
+                                                landscaped gardens. Ideal for guests seeking tranquility in the
+                                                heart of
+                                                the city.</p>
+                                            <div>
+                                                <h6>Room Amenities</h6>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-lg-6">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Garden View</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Mini
+                                                                        Bar</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">High-Speed
+                                                                        Wi-Fi</li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Private Balcony
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Marble
+                                                                        Bathroom</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">24/7 Room Service
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+
+                                                        <hr class="">
+
+                                                        <div class="d-block d-md-flex  justify-content-between">
+                                                            <div
+                                                                class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                                <div> <i
+                                                                        class="bi bi-wifi icon-bold text-secondary "></i>
+                                                                </div>
+                                                                <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-cup  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div><i
+                                                                        class="bi bi-car-front icon-bold text-secondary"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                                <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                    style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                    href="#">
+                                                                    View Details
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                        viewBox="0 0 16 16" aria-hidden="true">
+                                                                        <path
+                                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                    </svg>
+                                                                </a>
+                                                                <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#bookingModal"
+                                                                    data-room="Deluxe Garden View - $329/night"
+                                                                    data-max-guests="2">Book
+                                                                    Now</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+
+                                    <!-- CARD 3 -->
+
+                                    <div class="card border-0 shadow rounded-top-4 ">
+                                        <div class="position-relative">
+                                            <div
+                                                class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                                <p class="px-3 mb-0 py-2 fw-semibold">From $499/night</p>
+                                            </div>
+                                            <img src="https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
+                                                class="card-img-top rounded-top-4" alt="...">
+                                            <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-square"></i>
+                                                    <span>65 sqm</span>
+                                                </div>
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-people"></i>
+                                                    <span>3 guests</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="card-title fw-bold">Executive Suite</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                    <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                        King Bed + Sofa Bed</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="bi bi-eye text-secondary"></i>
+                                                    <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                        View</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Spacious suite with separate living area, perfect
+                                                for
+                                                extended stays and business meetings which features premium
+                                                amenities.
+                                            </p>
+                                            <div>
+                                                <h6>Room Amenities</h6>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-lg-6">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Separate Living
+                                                                        Room
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Executive Lounge
+                                                                        Access
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Work Desk
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">City View</li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Mini Bar
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Premium Bathroom
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+
+                                                        <hr class="">
+
+                                                        <div class="d-block d-md-flex  justify-content-between">
+                                                            <div
+                                                                class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                                <div> <i
+                                                                        class="bi bi-wifi icon-bold text-secondary "></i>
+                                                                </div>
+                                                                <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-cup  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div><i
+                                                                        class="bi bi-car-front icon-bold text-secondary"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                                <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                    style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                    href="#">
+                                                                    View Details
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                        viewBox="0 0 16 16" aria-hidden="true">
+                                                                        <path
+                                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                    </svg>
+                                                                </a>
+                                                                <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#bookingModal"
+                                                                    data-room="Executive Suite - $499/night"
+                                                                    data-max-guests="3">Book
+                                                                    Now</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+
+                                    <!-- CARD 4 -->
+
+                                    <div class="card border-0 shadow rounded-top-4 " style="height: 10">
+                                        <div class="position-relative">
+                                            <div
+                                                class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                                <p class="px-3 mb-0 py-2 fw-semibold">From $699/night</p>
+                                            </div>
+                                            <img src="https://t4.ftcdn.net/jpg/03/77/40/95/240_F_377409525_ddrPo0zKFCOsh5HbL2C9gUXIyUqY49DX.jpg"
+                                                class="card-img-top rounded-top-4" alt="...">
+                                            <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-square"></i>
+                                                    <span>85 sqm</span>
+                                                </div>
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-people"></i>
+                                                    <span>4 guests</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="card-title fw-bold">Royal Suite</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                    <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                        King Bed + 1 Queen Sofa Bed</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="bi bi-eye text-secondary"></i>
+                                                    <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                        View</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Luxurious suite with panoramic city views, separate
+                                                dining area, and premium amenities. Perfect for special occasions
+                                                and
+                                                VIP guests.
+
+
+                                            </p>
+                                            <div>
+                                                <h6>Room Amenities</h6>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-lg-6">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Panoramic Views
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Premium Mini Bar
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Butler Service
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Separate Dining
+                                                                        Area
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Jacuzzi Tab
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Private Balcony
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+
+                                                        <hr class="">
+
+                                                        <div class="d-block d-md-flex  justify-content-between">
+                                                            <div
+                                                                class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                                <div> <i
+                                                                        class="bi bi-wifi icon-bold text-secondary "></i>
+                                                                </div>
+                                                                <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-cup  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div><i
+                                                                        class="bi bi-car-front icon-bold text-secondary"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                                <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                    style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                    href="#">
+                                                                    View Details
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                        viewBox="0 0 16 16" aria-hidden="true">
+                                                                        <path
+                                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                    </svg>
+                                                                </a>
+                                                                <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#bookingModal"
+                                                                    data-room="Royal Suite - $699/night">Book
+                                                                    Now</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+
+                                    <!-- CARD 5 -->
+
+                                    <div class="card border-0 shadow rounded-top-4 " style="height: 10">
+                                        <div class="position-relative">
+                                            <div
+                                                class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                                <p class="px-3 mb-0 py-2 fw-semibold">From $1299/night</p>
+                                            </div>
+                                            <img src="https://t3.ftcdn.net/jpg/10/47/76/06/240_F_1047760603_H9k0h109Ei6R9MwYODbq5SMchwHqjPPa.jpg"
+                                                class="card-img-top rounded-top-4" alt="...">
+                                            <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-square"></i>
+                                                    <span>150 sqm</span>
+                                                </div>
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-people"></i>
+                                                    <span>6 guests</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="card-title fw-bold">Presidential Suite</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                    <span style="font-size: 13px;" class="fw-medium text-secondary">2
+                                                        King Bedrooms + Living Room</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="bi bi-eye text-secondary"></i>
+                                                    <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                        View</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">The pinnacle of luxury accommodation. This
+                                                expansive
+                                                suite features multiple bedrooms, a grand living area, and
+                                                unparalleled
+                                                service.
+                                            </p>
+                                            <div>
+                                                <h6>Room Amenities</h6>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-lg-6">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Two Master Bedrooms
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Private Dining Room
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Multiple Bedrooms
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Grand Living Room
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Full Kitchen
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Private Elevator
+                                                                        Access
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+
+                                                        <hr class="">
+
+                                                        <div class="d-block d-md-flex  justify-content-between">
+                                                            <div
+                                                                class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                                <div> <i
+                                                                        class="bi bi-wifi icon-bold text-secondary "></i>
+                                                                </div>
+                                                                <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-cup  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div><i
+                                                                        class="bi bi-car-front icon-bold text-secondary"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                                <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                    style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                    href="#">
+                                                                    View Details
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                        viewBox="0 0 16 16" aria-hidden="true">
+                                                                        <path
+                                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                    </svg>
+                                                                </a>
+                                                                <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#bookingModal"
+                                                                    data-room="Presidential Suite - $1299/night"
+                                                                    data-max-guests="6">Book
+                                                                    Now</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+
+                                    <!-- CARD 6 -->
+
+                                    <div class="card border-0 shadow rounded-top-4 " style="height: 10">
+                                        <div class="position-relative">
+                                            <div
+                                                class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                                <p class="px-3 mb-0 py-2 fw-semibold">From $1899/night</p>
+                                            </div>
+                                            <img src="https://t4.ftcdn.net/jpg/14/42/08/47/240_F_1442084714_HTl5k3FQ4erQ7DNVUrNDqH5W7AYmrJ1l.jpg"
+                                                class="card-img-top rounded-top-4" alt="...">
+                                            <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-square"></i>
+                                                    <span>200 sqm</span>
+                                                </div>
+                                                <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                    style="font-size: 13px;">
+                                                    <i class="bi bi-people"></i>
+                                                    <span>8 guests</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="card-title fw-bold">Penthouse Suite</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                    <span style="font-size: 13px;" class="fw-medium text-secondary">3
+                                                        King Bedrooms + Living Areas</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="bi bi-eye text-secondary"></i>
+                                                    <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                        View</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Our most exclusive accommodation spanning the
+                                                entire
+                                                top floor. Features private terrace, multiple living areas, and
+                                                white-glove service.
+                                            </p>
+                                            <div>
+                                                <h6>Room Amenities</h6>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-lg-6">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Private Terrace
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Multiple Living
+                                                                        Areas
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Wine Cellar
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                            <ul class="list-group list-group-flush">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Three Master Suites
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Full Gourmet
+                                                                        Kitchen
+                                                                    </li>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <i
+                                                                        class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                    <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                        style="font-size: 13px;">Private Spa Room
+                                                                    </li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+
+                                                        <hr class="">
+
+                                                        <div class="d-block d-md-flex  justify-content-between">
+                                                            <div
+                                                                class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                                <div> <i
+                                                                        class="bi bi-wifi icon-bold text-secondary "></i>
+                                                                </div>
+                                                                <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-cup  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div> <i
+                                                                        class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                                </div>
+                                                                <div><i
+                                                                        class="bi bi-car-front icon-bold text-secondary"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                                <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                    style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                    href="#">
+                                                                    View Details
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                        viewBox="0 0 16 16" aria-hidden="true">
+                                                                        <path
+                                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                    </svg>
+                                                                </a>
+                                                                <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#bookingModal"
+                                                                    data-room="Penthouse Suite - $1899/night"
+                                                                    data-max-guests="8">Book
+                                                                    Now</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+
+                        <div class="row mt-4 g-4 py-4">
+                            <div class="col-12 col-lg-6">
+                                <div class="card border-0 shadow rounded-top-4 ">
+                                    <div class="position-relative">
+                                        <div
+                                            class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                            <p class="px-3 mb-0 py-2 fw-semibold">From $499/night</p>
+                                        </div>
+                                        <img src="https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
+                                            class="card-img-top rounded-top-4" alt="...">
+                                        <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-square"></i>
+                                                <span>65 sqm</span>
+                                            </div>
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-people"></i>
+                                                <span>3 guests</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title fw-bold">Executive Suite</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex align-items-center gap-1">
+                                                <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                    King Bed + Sofa Bed</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <i class="bi bi-eye text-secondary"></i>
+                                                <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                    View</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Spacious suite with separate living area, perfect for
+                                            extended stays and business meetings which features premium amenities.
+                                        </p>
+                                        <div>
+                                            <h6>Room Amenities</h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Separate Living Room
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Executive Lounge Access
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Work Desk
+                                                                </li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">City View</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Mini Bar
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Premium Bathroom</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <hr class="">
+
+                                                    <div class="d-block d-md-flex  justify-content-between">
+                                                        <div
+                                                            class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                            <div> <i class="bi bi-wifi icon-bold text-secondary "></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-cup  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i
+                                                                    class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div><i
+                                                                    class="bi bi-car-front icon-bold text-secondary"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                            <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                href="#">
+                                                                View Details
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                    viewBox="0 0 16 16" aria-hidden="true">
+                                                                    <path
+                                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                </svg>
+                                                            </a>
+                                                            <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                data-bs-toggle="modal" data-bs-target="#bookingModal"
+                                                                data-room="Executive Suite - $499/night"
+                                                                data-max-guests="3">Book
+                                                                Now</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="card border-0 shadow rounded-top-4 " style="height: 10">
+                                    <div class="position-relative">
+                                        <div
+                                            class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                            <p class="px-3 mb-0 py-2 fw-semibold">From $699/night</p>
+                                        </div>
+                                        <img src="https://t4.ftcdn.net/jpg/03/77/40/95/240_F_377409525_ddrPo0zKFCOsh5HbL2C9gUXIyUqY49DX.jpg"
+                                            class="card-img-top rounded-top-4" alt="...">
+                                        <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-square"></i>
+                                                <span>85 sqm</span>
+                                            </div>
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-people"></i>
+                                                <span>4 guests</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title fw-bold">Royal Suite</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex align-items-center gap-1">
+                                                <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                    King Bed + 1 Queen Sofa Bed</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <i class="bi bi-eye text-secondary"></i>
+                                                <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                    View</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Luxurious suite with panoramic city views, separate
+                                            dining area, and premium amenities. Perfect for special occasions and
+                                            VIP guests.
+
+
+                                        </p>
+                                        <div>
+                                            <h6>Room Amenities</h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Panoramic Views
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Premium Mini Bar
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Butler Service
+                                                                </li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Separate Dining Area
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Jacuzzi Tab
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Private Balcony</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <hr class="">
+
+                                                    <div class="d-block d-md-flex  justify-content-between">
+                                                        <div
+                                                            class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                            <div> <i class="bi bi-wifi icon-bold text-secondary "></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-cup  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i
+                                                                    class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div><i
+                                                                    class="bi bi-car-front icon-bold text-secondary"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                            <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                href="#">
+                                                                View Details
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                    viewBox="0 0 16 16" aria-hidden="true">
+                                                                    <path
+                                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                </svg>
+                                                            </a>
+                                                            <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                data-bs-toggle="modal" data-bs-target="#bookingModal"
+                                                                data-room="Royal Suite - $699/night"
+                                                                data-max-guests="4">Book
+                                                                Now</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="row mt-3 g-4 py-4">
+                            <div class="col-12 col-lg-6">
+
+                                <div class="card border-0 shadow rounded-top-4">
+                                    <div class="position-relative">
+                                        <div
+                                            class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                            <p class="px-3 mb-0 py-2 fw-semibold">From $299/night</p>
+                                        </div>
+                                        <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
+                                            class="card-img-top rounded-top-4" alt="...">
+                                        <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-square"></i>
+                                                <span>35 sqm</span>
+                                            </div>
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-people"></i>
+                                                <span>2 guests</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title fw-bold">Deluxe City View</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex align-items-center gap-1">
+                                                <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                    King Bed</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <i class="bi bi-eye text-secondary"></i>
+                                                <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                    View</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Elegant room with modern amenities and stunning city
+                                            views. Perfect for business travelers and couples seeking comfort and
+                                            style.</p>
+                                        <div>
+                                            <h6>Room Amenities</h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">City View</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Mini
+                                                                    Bar</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">High-Speed
+                                                                    Wi-Fi</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Work Desk</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Marble
+                                                                    Bathroom</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">24/7 Room Service</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <hr class="">
+
+                                                    <div class="d-block d-md-flex  justify-content-between">
+                                                        <div
+                                                            class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                            <div> <i class="bi bi-wifi icon-bold text-secondary "></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-cup  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i
+                                                                    class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div><i
+                                                                    class="bi bi-car-front icon-bold text-secondary"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                            <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                href="#">
+                                                                View Details
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                    viewBox="0 0 16 16" aria-hidden="true">
+                                                                    <path
+                                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                </svg>
+                                                            </a>
+                                                            <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                data-bs-toggle="modal" data-bs-target="#bookingModal"
+                                                                data-room="Deluxe City View - $299/night"
+                                                                data-max-guests="2">Book
+                                                                Now</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="card border-0 shadow rounded-top-4">
+                                    <div class="position-relative">
+                                        <div
+                                            class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                            <p class="px-3 mb-0 py-2 fw-semibold">From $329/night</p>
+                                        </div>
+                                        <img src="https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
+                                            class="card-img-top rounded-top-4" alt="...">
+                                        <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-square"></i>
+                                                <span>38 sqm</span>
+                                            </div>
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-people"></i>
+                                                <span>2 guests</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title fw-bold">Deluxe Garden View</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex align-items-center gap-1">
+                                                <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                <span style="font-size: 13px;" class="fw-medium text-secondary">1
+                                                    King Bed</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <i class="bi bi-eye text-secondary"></i>
+                                                <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                    View</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Serene accommodation overlooking our beautifully
+                                            landscaped gardens. Ideal for guests seeking tranquility in the heart of
+                                            the city.</p>
+                                        <div>
+                                            <h6>Room Amenities</h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Garden View</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Mini
+                                                                    Bar</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">High-Speed
+                                                                    Wi-Fi</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Private Balcony</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Marble
+                                                                    Bathroom</li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">24/7 Room Service</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <hr class="">
+
+                                                    <div class="d-block d-md-flex  justify-content-between">
+                                                        <div
+                                                            class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                            <div> <i class="bi bi-wifi icon-bold text-secondary "></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-cup  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i
+                                                                    class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div><i
+                                                                    class="bi bi-car-front icon-bold text-secondary"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                            <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                href="#">
+                                                                View Details
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                    viewBox="0 0 16 16" aria-hidden="true">
+                                                                    <path
+                                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                </svg>
+                                                            </a>
+                                                            <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                data-bs-toggle="modal" data-bs-target="#bookingModal"
+                                                                data-room="Deluxe Garden View - $329/night"
+                                                                data-max-guests="2">Book
+                                                                Now</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="presidential-tab-pane" role="tabpanel"
+                        aria-labelledby="presidential-tab" tabindex="0">
+                        <div class="row mt-4 g-4 py-4">
+                            <div class="col-12 col-lg-6">
+                                <div class="card border-0 shadow rounded-top-4 " style="height: 10">
+                                    <div class="position-relative">
+                                        <div
+                                            class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                            <p class="px-3 mb-0 py-2 fw-semibold">From $1299/night</p>
+                                        </div>
+                                        <img src="https://t3.ftcdn.net/jpg/10/47/76/06/240_F_1047760603_H9k0h109Ei6R9MwYODbq5SMchwHqjPPa.jpg"
+                                            class="card-img-top rounded-top-4" alt="...">
+                                        <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-square"></i>
+                                                <span>150 sqm</span>
+                                            </div>
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-people"></i>
+                                                <span>6 guests</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title fw-bold">Presidential Suite</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex align-items-center gap-1">
+                                                <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                <span style="font-size: 13px;" class="fw-medium text-secondary">2
+                                                    King Bedrooms + Living Room</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <i class="bi bi-eye text-secondary"></i>
+                                                <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                    View</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">The pinnacle of luxury accommodation. This expansive
+                                            suite features multiple bedrooms, a grand living area, and unparalleled
+                                            service.
+                                        </p>
+                                        <div>
+                                            <h6>Room Amenities</h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Two Master Bedrooms
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Private Dining Room
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Multiple Bedrooms
+                                                                </li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Grand Living Room
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Full Kitchen
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Private Elevator Access
+                                                                </li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <hr class="">
+
+                                                    <div class="d-block d-md-flex  justify-content-between">
+                                                        <div
+                                                            class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                            <div> <i class="bi bi-wifi icon-bold text-secondary "></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-cup  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i
+                                                                    class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div><i
+                                                                    class="bi bi-car-front icon-bold text-secondary"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                            <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                href="#">
+                                                                View Details
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                    viewBox="0 0 16 16" aria-hidden="true">
+                                                                    <path
+                                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                </svg>
+                                                            </a>
+                                                            <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                data-bs-toggle="modal" data-bs-target="#bookingModal"
+                                                                data-room="Presidential Suite - $1299/night"
+                                                                data-max-guests="6">Book
+                                                                Now</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="card border-0 shadow rounded-top-4 " style="height: 10">
+                                    <div class="position-relative">
+                                        <div
+                                            class="bg-success text-white top-0 end-0 me-3 mt-3 rounded-5 position-absolute ">
+                                            <p class="px-3 mb-0 py-2 fw-semibold">From $1899/night</p>
+                                        </div>
+                                        <img src="https://t4.ftcdn.net/jpg/14/42/08/47/240_F_1442084714_HTl5k3FQ4erQ7DNVUrNDqH5W7AYmrJ1l.jpg"
+                                            class="card-img-top rounded-top-4" alt="...">
+                                        <div class="d-flex gap-3 position-absolute bottom-0 ms-3 mb-2">
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-square"></i>
+                                                <span>200 sqm</span>
+                                            </div>
+                                            <div class="bg-dark bg-opacity-75 px-3 py-1 rounded-5 text-white"
+                                                style="font-size: 13px;">
+                                                <i class="bi bi-people"></i>
+                                                <span>8 guests</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title fw-bold">Penthouse Suite</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex align-items-center gap-1">
+                                                <ion-icon name="bed-outline" class="text-secondary"></ion-icon>
+                                                <span style="font-size: 13px;" class="fw-medium text-secondary">3
+                                                    King Bedrooms + Living Areas</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <i class="bi bi-eye text-secondary"></i>
+                                                <span class="fw-medium text-secondary" style="font-size: 13px;">City
+                                                    View</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Our most exclusive accommodation spanning the entire
+                                            top floor. Features private terrace, multiple living areas, and
+                                            white-glove service.
+                                        </p>
+                                        <div>
+                                            <h6>Room Amenities</h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Private Terrace
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Multiple Living Areas
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Wine Cellar
+                                                                </li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6 mb-3">
+                                                        <ul class="list-group list-group-flush">
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Three Master Suites
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Full Gourmet Kitchen
+                                                                </li>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <i
+                                                                    class="bi bi-check2-circle icon-bold text-success"></i>
+                                                                <li class="list-group-item border-0 text-secondary fw-medium"
+                                                                    style="font-size: 13px;">Private Spa Room
+                                                                </li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <hr class="">
+
+                                                    <div class="d-block d-md-flex  justify-content-between">
+                                                        <div
+                                                            class="d-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                                            <div> <i class="bi bi-wifi icon-bold text-secondary "></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-tv icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i class="bi bi-cup  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div> <i
+                                                                    class="bi bi-droplet  icon-bold text-secondary"></i>
+                                                            </div>
+                                                            <div><i
+                                                                    class="bi bi-car-front icon-bold text-secondary"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                                                            <a class="icon-link icon-link-hover py-2 px-2 fw-medium rounded bg-transparent border border-success justify-content-center w-10 text-success text-decoration-none"
+                                                                style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                                                href="#">
+                                                                View Details
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi"
+                                                                    viewBox="0 0 16 16" aria-hidden="true">
+                                                                    <path
+                                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                                </svg>
+                                                            </a>
+                                                            <button class="btn btn-success py-2 px-4 fw-medium"
+                                                                data-bs-toggle="modal" data-bs-target="#bookingModal"
+                                                                data-room="Penthouse Suite - $1899/night"
+                                                                data-max-guests="8">Book
+                                                                Now</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid mt-5">
+                <div class="text-center">
+                    <h1 class="fw-bold">Every Room <span class="text-success">Includes</span></h1>
+                    <p class="fw-medium text-secondary">Standard amenities and services available in all our
+                        accommodations to ensure your comfort and
+                        <br>
+                        convenience.
+                    </p>
+                </div>
+                <div class="row py-5 g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 cdh">
+                            <div class="card-body text-center">
+                                <div class=" d-flex rounded-circle bg-success bg-opacity-25 align-items-center justify-content-center m-auto"
+                                    style="width: 80px; height: 80px;">
+                                    <h4 class="card-title"><i class="bi bi-wifi icon-bold text-success fs-3"></i></h4>
+                                </div>
+                                <h6 class="card-subtitle mb-2 fw-semibold mt-3 ">High-Speed Wi-Fi</h6>
+                                <p class="card-text text-secondary fw-medium" style="font-size: 13px;">Complimentary
+                                    ultra-fast internet throughout your stay
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 cdh">
+                            <div class="card-body text-center">
+                                <div class=" d-flex rounded-circle bg-success bg-opacity-25 align-items-center justify-content-center m-auto"
+                                    style="width: 80px; height: 80px;">
+                                    <h4 class="card-title"><i class="bi bi-tv icon-bold text-success fs-3"></i></h4>
+                                </div>
+                                <h6 class="card-subtitle mb-2 fw-semibold mt-3 ">Sleek Smart TV</h6>
+                                <p class="card-text text-secondary fw-medium" style="font-size: 13px;">Enjoy a Smart TV
+                                    with access to Netflix, YouTube, and international channels
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 cdh">
+                            <div class="card-body text-center">
+                                <div class=" d-flex rounded-circle bg-success bg-opacity-25 align-items-center justify-content-center m-auto"
+                                    style="width: 80px; height: 80px;">
+                                    <h4 class="card-title"><i class="bi bi-cup-hot icon-bold text-success fs-3"></i>
+                                    </h4>
+                                </div>
+                                <h6 class="card-subtitle mb-2 fw-semibold mt-3 ">24/7 Room Services</h6>
+                                <p class="card-text text-secondary fw-medium" style="font-size: 13px;">Round-the-clock
+                                    dining and beverage service
+
+
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 cdh">
+                            <div class="card-body text-center">
+                                <div class=" d-flex rounded-circle bg-success bg-opacity-25 align-items-center justify-content-center m-auto"
+                                    style="width: 80px; height: 80px;">
+                                    <h4 class="card-title"><i class="bi bi-car-front icon-bold text-success fs-3"></i>
+                                    </h4>
+                                </div>
+                                <h6 class="card-subtitle mb-2 fw-semibold mt-3 ">Valet Parking</h6>
+                                <p class="card-text text-secondary fw-medium" style="font-size: 13px;">Complimentary
+                                    valet service for all registered guests
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+            <div class="container-fluid bg-success text-center text-white p-5 mt-4">
+                <div>
+                    <h1 class="fw-bold display-5 ">Ready to Book Your Stay?</h1>
+                    <p class=" m-auto text-white-50 fw-bold">Experience luxury redefined with our exceptional
+                        accommodations
+                        and personalized service.
+                    </p>
+                    <div class="d-block d-md-flex gap-3 align-items-center justify-content-center mt-5">
+                        <div>
+                            <a href="#"> <button type="button"
+                                    class="btn bg-white rounded-5 py-3 mb-3 mb-md-0 px-4 fs-5 fw-semibold text-success">
+                                    Check Availability</button></a>
+                        </div>
+                        <div class="border  border-2 border-white  p-3 px-4 rounded-5">
+                            <a class="icon-link icon-link-hover  text-white fs-5 fw-semibold text-decoration-none"
+                                style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
+                                Special Offers
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container-fluid text-white" style="    background-color: rgb(20, 27, 43);">
+            <div class="row p-3 g-4">
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="logo d-flex align-items-center gap-2   mb-1">
+                        <img src="./images/logo2.png" alt="" style="width: 50px;">
+                        <a class="navbar-brand fw-bold text-white fs-4" href="#">Royal Haven</a>
+                    </div>
+                    <p class="ms-">Where luxury meets comfort. Experience unparalleled hospitality in the heart of the
+                        city with our
+                        world-class amenities and personalized service.</p>
+                    <div class="d-flex align-items-center gap-4 ">
+                        <div class="d-flex align-items-center">
+                            <a href="https://www.facebook.com/me/"><ion-icon name="logo-facebook"
+                                    class="fs-3 text-white p-1"></ion-icon></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="https://x.com/mawunyo_anani"><ion-icon name="logo-twitter"
+                                    class="fs-3 text-white"></ion-icon></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="https://www.instagram.com/mawunyo.anani/"><ion-icon name="logo-instagram"
+                                    class="fs-3 text-white"></ion-icon></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="mailto:mawunyoanani4@gmail.com"><ion-icon name="mail"
+                                    class="fs-3 text-white"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="text-success fs-5  fw-bold mb-4">Quick Links</h3>
+                    <p><a class="nav-link" href="./index.html">Home</a></p>
+                    <p><a class="nav-link" href="./About.html">About Us</a></p>
+                    <p><a class="nav-link" href="./rooms.html">Rooms & Suites</a></p>
+                    <p><a class="nav-link" href="./amenities.html">Amenities</a></p>
+                    <p><a class="nav-link" href="./dining.html">Dinig</a></p>
+                    <p><a class="nav-link" href="./gallery.html">Gallery</a></p>
+                    <p><a class="nav-link" href="./contact.html">Contact</a></p>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="text-success fs-5 fw-bold mb-4">Services</h3>
+                    <p>24/7 Room Service</p>
+                    <p>Concierge Services</p>
+                    <p>Spa & Wellness Center</p>
+                    <p>Business Facilities</p>
+                    <p>Event Planning</p>
+                    <p>Airport Transportation</p>
+                    <p>Laundry & Dry Cleaning</p>
+                    <p>Pet-FriendlyServices</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="text-success fs-5 fw-bold mb-4">Contact Info</h3>
+                    <div class="d-flex gap-1 ">
+                        <ion-icon name="location-outline" class="text-success fs-4 "></ion-icon>
+                        <p>Airport Residential Area <br>
+                            Accra, Greater Accra Region <br>
+                            Ghana</p>
+                    </div>
+                    <div class="d-flex gap-2  ">
+                        <i class="bi bi-telephone text-success fs-5 "></i>
+                        <p> (+233) 245 494 534</p>
+                    </div>
+                    <div class="d-flex gap-2  ">
+                        <ion-icon name="mail" class="fs-4 text-success"></ion-icon></a>
+                        <p> info@royalhaven.com</p>
+                    </div>
+                    <div class="rounded-3 p-3" style="    background-color: rgba(60, 71, 97, 0.329);">
+                        <h8 class="fs-5">Newsletter</h8>
+                        <p class="text-secondary fw-medium">Stay updated with our latest offers</p>
+                        <form class="row row-cols-lg-auto g-3 align-items-center"
+                            action="https://formspree.io/f/mgvzvaje" method="post">
+                            <div class="col-12  col-lg-6">
+                                <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                                <div class="input-group">
+                                    <input type="email" name="Newsletter Email" class="form-control "
+                                        id="inlineFormInputGroupUsername" placeholder="Your email">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <button type="submit" class="btn btn-success w-100">Subscribe</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <hr class="m-auto mt-5" style="width: 98%;">
+                <div class=" d-block d-md-flex justify-content-between mt-4">
+                    <div>
+                        <p class="text-secondary fw-medium">&copy; 2025 Royal Haven Hotel. All rights reserved</p>
+                    </div>
+                    <div class="d-flex ">
+                        <ul class="d-block d-md-flex gap-3 list-unstyled">
+                            <li class=""><a href="" class="text-decoration-none text-secondary fs">Privacy Policy</a>
+                            </li>
+                            <li><a href="" class="text-decoration-none text-secondary">Terms and Conditions</a></li>
+                            <li><a href="" class="text-decoration-none text-secondary">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="logo d-flex align-items-center justify-content-md-center gap-2">
+                    <img src="./images/logo2.png" alt="" style="width: 70px;">
+                    <a class="navbar-brand fw-bold text-success fs-2" href="#">Royal Haven</a>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-medium">Complete your reservation in a few simple steps.</p>
+                    <form action="https://formspree.io/f/mgvzvaje" method="post">
+                        <div class="mb-3">
+                            <label for="roomInput" class="form-label">Room</label>
+                            <input type="text" name="Room" id="roomInput" class="form-control" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Check-in</label>
+                            <input type="date" name="Check-in" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Check-out</label>
+                            <input type="date" name="Check-out" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="roomInput" class="form-label">Guests</label>
+                            <input id="guestCount" name="Guests" type="number" class="form-control" min="1"
+                                placeholder="">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="guestName" class="form-label">Name</label>
+                            <input type="text" name="Name" pattern="[A-Za-z\s]+" class="form-control" id="guestName"
+                                placeholder="Your full name" title="Only letters and spaces are allowed" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guestPhoneNumber" class="form-label">Phone Number</label>
+                            <input type="text" name="Phone Number" class="form-control" id="guestName"
+                                pattern="[0-9]{10,15}" maxlength="10" title="Numbers Only" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guestEmail" class="form-label">Email</label>
+                            <input type="email" name="Email" class="form-control" id="guestEmail"
+                                placeholder="Your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 py-3">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
